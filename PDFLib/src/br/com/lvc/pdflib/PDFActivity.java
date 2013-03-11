@@ -24,7 +24,7 @@ public class PDFActivity extends BaseActivity {
 		touchImageView = (TouchImageView)findViewById(R.id.image_view_touch);
 
 		try {
-
+ 
 			InputStream inputStream = getAssets().open(PDF_FILE_PATH);
 			pdfInBytes = toByteArray(inputStream);
 			pdfFacade = PDFFacade.getInstance(2.0f);
